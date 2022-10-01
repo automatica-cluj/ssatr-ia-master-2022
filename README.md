@@ -9,3 +9,9 @@ Inainte de rularea exemplului serverul ActiveMQ trebuie sa fie pornit pe localho
 Link-uri utile:
 - https://medium.com/@mailshine/activemq-getting-started-with-springboot-a0c3c960356e 
 - https://spring.io/guides/gs/messaging-jms/ 
+
+* gs-accessing-data-mysql
+
+Exemplu accesare baza de date MySQL utilizand Spring Data si JPA (Hybrnate)
+
+https://spring.io/guides/gs/accessing-data-mysql/
