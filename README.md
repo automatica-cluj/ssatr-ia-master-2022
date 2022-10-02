@@ -1,6 +1,22 @@
 # ssatr-ia-master-2022
 
-* gs-messaging-jms
+>>> https://spring.io/guides#getting-started-guides <<<
+
+* Building a RESTful Web Service
+
+https://spring.io/guides/gs/rest-service/
+
+* Accessing data with MySQL
+
+Exemplu accesare baza de date MySQL utilizand Spring Data si JPA (Hybrnate)
+
+https://spring.io/guides/gs/accessing-data-mysql/
+
+* Accessing JPA Data with REST
+
+https://spring.io/guides/gs/accessing-data-rest/
+
+* Messaging with JMS
 
 Exemplu conectare si cumunicare cu ActiveMQ.
 
@@ -10,8 +26,10 @@ Link-uri utile:
 - https://medium.com/@mailshine/activemq-getting-started-with-springboot-a0c3c960356e 
 - https://spring.io/guides/gs/messaging-jms/ 
 
-* gs-accessing-data-mysql
+* Messaging with Google Cloud Pub/Sub 
 
-Exemplu accesare baza de date MySQL utilizand Spring Data si JPA (Hybrnate)
+https://spring.io/guides/gs/messaging-gcp-pubsub/ 
 
-https://spring.io/guides/gs/accessing-data-mysql/
+* Scheduling Tasks 
+
+https://spring.io/guides/gs/scheduling-tasks/
