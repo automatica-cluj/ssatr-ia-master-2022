@@ -9,7 +9,8 @@ public class Lab1ExempluCar {
 
     public static void main(String[] args) {
         System.out.println("Hello Car!");
-        Car c1 = new Car("AUDI");
+        Engine x = new Engine();
+        Car c1 = new Car("AUDI",x);
         c1.accelerate();
         c1.startCar();
         c1.accelerate();

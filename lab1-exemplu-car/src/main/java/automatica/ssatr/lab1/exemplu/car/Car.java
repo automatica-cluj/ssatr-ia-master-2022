@@ -5,13 +5,17 @@ public class Car {
     private boolean status;
     private int speed;
     private String name;
+    private Engine e;
 
-    public Car(String name) {
+    public Car(String name,Engine e) {
         this.name = name;
+        //this.e = new Engine();
+        this.e = e;
     }
     
     void startCar(){
         System.out.println("Starting car!");
+        e.start();
         status = true;
     }
     

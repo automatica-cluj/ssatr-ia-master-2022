@@ -16,7 +16,7 @@ public class CarJFrame extends javax.swing.JFrame {
      * Creates new form CarJFrame
      */
     public CarJFrame() {
-        myCar = new Car("MY CAR");
+        myCar = new Car("MY CAR", new ElectricEngine());
         initComponents();
         this.tfCarName.setText(myCar.getName());
     }
