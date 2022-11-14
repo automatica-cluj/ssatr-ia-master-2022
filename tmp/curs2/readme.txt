@@ -9,4 +9,4 @@
 3. Modificare comportament metoda entryCar pentru a nu stoca duplicate
 
 4. Adaugare istoric intrare\iesire vehicule
-    - Sa se adauge o noua lista de tip (ArrayList) in care sa se stocheze totae masinile care parasesc parcare. 
+    - Sa se adauge o noua lista de tip (ArrayList) in care sa se stocheze toate masinile care parasesc parcare. 
