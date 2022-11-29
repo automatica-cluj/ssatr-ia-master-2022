@@ -2,9 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ro.utcluj.ssatr.curs3;
+package ro.utcluj.laborator.netcomm;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -19,7 +21,7 @@ public class ParkingDbAccess {
           Class.forName("com.mysql.cj.jdbc.Driver");
  
                 //conectare la baza de date            
-                 conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo1","root","root");
+          conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo1","root","root");
     }
     
     public void insertAccessLog(Car log) throws SQLException{
@@ -45,6 +47,23 @@ public class ParkingDbAccess {
             return null;
         }           
     }
+    
+    public List<Car> findAll() throws SQLException{
+        ArrayList<Car> cars = new ArrayList<Car>();
+        
+        Statement s = conn.createStatement();
+        ResultSet rs = s.executeQuery("SELECT * FROM PARKINGLOGS");
+        while(rs.next()){
+            cars.add(
+                    new Car(rs.getString("platenumber"), 
+                            rs.getLong("entrytime")
+                    )
+            );
+        }
+        return cars;
+    }
+    
+    
     
     public void deleteByPlateNumber(String plateNumber) throws SQLException{
         Statement s = conn.createStatement();

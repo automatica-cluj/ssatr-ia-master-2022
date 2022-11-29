@@ -16,6 +16,11 @@ public class Car {
         this.plateNumber = plateNumber;
     }
 
+    public Car(String plateNumber, long entryTime) {
+        this.plateNumber = plateNumber;
+        this.entryTime = entryTime;
+    }
+
     public boolean isFreeParking() {
         return freeParking;
     }
